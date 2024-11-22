@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  flask-app: # This is the service name
+    container_name: language_detection-app
+    build: . # Tells Docker to build the image from the Dockerfile in the current directory
+    image: msjahid/language_detection:latest # Specifies the image name to be built and used
+    ports:
+      - "4000:4000" # Exposes the container's port 4000 to the host machine's port 4000
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=production # Enable development mode for live reloading
+      - FLASK_DEBUG=1 # Ensure debug mode is enabled
+    volumes:
+      - .:/app # Mounts the current directory to the /app directory in the container
