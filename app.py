@@ -7,13 +7,12 @@ import pickle
 import re
 import numpy as np
 
+# Import custom_tokenizer explicitly from the tokenizer_module
+from tokenizer_module import custom_tokenizer  # Adjust path if necessary
+
 # Initialize the Flask application
 app = Flask(__name__, static_folder='core/static', template_folder='core/templates')
 
-
-# Define custom tokenizer explicitly here
-def custom_tokenizer(text):
-    return text.split()  # Simple space-based tokenizer
 
 
 # Load the serialized components
@@ -26,6 +25,10 @@ try:
 
     with open('core/models/label_encoder.pkl', 'rb') as encoder_file:
         encoder = pickle.load(encoder_file)
+
+    # Reassign the custom tokenizer after loading the vectorizer
+    vectorizer.tokenizer = custom_tokenizer  # Ensure custom tokenizer is used
+    print("Models, vectorizer, and encoder loaded successfully!")
 
 except Exception as e:
     print(f"Error loading model components: {e}")
