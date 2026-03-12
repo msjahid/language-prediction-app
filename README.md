@@ -191,7 +191,7 @@ Railway provides a unique URL (e.g., `https://langdetect-app.up.railway.app/`).
 - Includes a text area to enter text for detection.
 - Shows the full list of 17 supported languages with flag icons.
 
-![Home Page](project_images/home.png)
+![Home Page](https://raw.githubusercontent.com/msjahid/language-prediction-app/refs/heads/main/project-image/home.png)
 
 ### 2. Prediction Page
 
@@ -199,20 +199,20 @@ Railway provides a unique URL (e.g., `https://langdetect-app.up.railway.app/`).
 - Shows the confidence level of the prediction.
 - Displays a custom message if the language is unsupported.
 
-![Prediction Page](project_images/prediction.png)
+![Prediction Page](https://raw.githubusercontent.com/msjahid/language-prediction-app/refs/heads/main/project-image/prediction.png)
 
 ### 2. Prediction Page Non listed language
 
 - Displays the non listed language result.
 
-![Non listed Page](project_images/non_listed_language.png)
+![Non listed Page](https://raw.githubusercontent.com/msjahid/language-prediction-app/refs/heads/main/project-image/non_listed_language.png)
 
 ### 3. Error Page
 
 - Displays descriptive error messages for invalid or empty inputs.
 - Includes a visual illustration for better UX.
 
-![Error Page](project_images/error.png)
+![Error Page](https://raw.githubusercontent.com/msjahid/language-prediction-app/refs/heads/main/project-image/error.png)
 
 ---
 
