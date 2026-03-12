@@ -2,6 +2,8 @@
 
 LangDetect is a Flask-based web application designed to detect the language of input text using machine learning. The app uses a trained Multinomial Naive Bayes model to provide instant language predictions with **98% accuracy** across **17 supported languages**. It is deployed on Railway for ease of access.
 
+Check out the live app here: [Language Prediction App](https://language-prediction-app-production.up.railway.app/)
+
 ---
 
 ## Features
