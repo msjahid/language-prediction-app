@@ -170,7 +170,7 @@ Visit [https://railway.app/](https://railway.app/) and create an account.
 
 ### Step 5: Access the app
 
-Railway provides a unique URL (e.g., `https://langdetect-app.up.railway.app/`).
+Railway provides a unique URL (e.g., `https://language-prediction-app-production.up.railway.app/`).
 
 ---
 
